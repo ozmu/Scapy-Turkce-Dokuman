@@ -9,4 +9,6 @@ Bazı tekniksel kavramlarda -_eğer bulabilirsem_- olayı sade bir şekilde anla
 Eksik bulduğunuz yerleri siz doldurabilirsiniz.Eğer müsait olamıyorsanız altta belirttiğim mail adresimden veya twitter hesabımdan bana ulaşıp "_şu konuyu da eklersen güzel olabilir_" önerilerinizi sunabilirsiniz.
 
 [Twitter hesabım](https://www.twitter.com/ozturkmuhammeet)
+
+
 [Mail hesabım](mailto:ozturkmuhammeet@gmail.com)
