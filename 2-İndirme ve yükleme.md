@@ -55,48 +55,6 @@ $ sudo scapy
 
 **Not**: Bir zip dosyasını çalıştırılabilir yapmak, zip başlığından önce bazı baytlar eklemeyle gerçekleşir.Çoğu zip programı bunu yapar fakat hepsi yapacak diye bir durum söz konusu değildir.
 
-# En son sürümden haberdâr olmak
-
-Eğer her zaman, son eklenen özellikler ve hata çözümleri ile son versiyonu edinmek istiyorsanız Scapy'nin Mercurial deposunu kullanmanız gerekir.
-
-1. [Mercurial](https://www.mercurial-scm.org/) sürüm kontrol sistemini yükleyin. Debian/Ubuntu'da:
-
-2. ```
-$ sudo apt-get install mercurial
-```
-
-
-```
-veya OpenBSD'de:
-```
-
-1. ```
-$ pkg_add mercurial
-```
-
-
-1. Scapy'nin deposundaki kopya ile kıyaslayın:
-
-2. ```
-$ hg clone http://hg.secdev.org/scapy
-```
-
-
-1. Scapy'yi standart yoldan kurun:
-
-2. ```
-$ cd scapy
-$ sudo python setup.py install
-```
-
-
-Daha sonra her zaman son sürüme güncelleyebilirsiniz:
-
-```
-$ hg pull
-$ hg update
-$ sudo python setup.py install
-```
 
 # Scapy v1.2 yükleme
 
