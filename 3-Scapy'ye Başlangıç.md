@@ -207,7 +207,7 @@ Sent 1 packets.
 
 Tamamdır.Sorunsuz bir şekilde isteğimizi gerçekleştirdik.İsterseniz aşağıdaki paketi inceleyebilirsiniz:
 
-![](https://lh5.googleusercontent.comC-02DF1pQxOAo_usgISh13nHWeQY54jUr4TdmyN9MyZsQO_i_yhH1DuAF_GSYBz9ter7Y7lwKHbg854=w1366-h650)
+![](https://lh4.googleusercontent.com/HA9_e9JODR0cIdkG2RCwgRijouazEgvR6qppKH9mIpoufzkWRYUpQoA5rhfaGBdc5MS-nrTx0DNJRFY=w1366-h650)
 
 
 
