@@ -59,32 +59,30 @@ $ sudo scapy
 
 Eğer her zaman, son eklenen özellikler ve hata çözümleri ile son versiyonu edinmek istiyorsanız Scapy'nin Mercurial deposunu kullanmanız gerekir.
 
-1. [Mercurial](https://www.mercurial-scm.org/) sürüm kontrol sistemini yükleyin. Debian/Ubuntu'da:
+1.[Mercurial](/www.selenic.com/mercurial/) sürüm kontrol sistemini yükleyin. Debian/Ubuntu'da:
 
-2. ```
+1. ```
 $ sudo apt-get install mercurial
 ```
 
 
-```
 veya OpenBSD'de:
-```
 
 1. ```
 $ pkg_add mercurial
 ```
 
 
-1. Scapy'nin deposundaki kopya ile kıyaslayın:
+2.Scapy'nin deposundaki kopya ile kıyaslayın:
 
-2. ```
+1. ```
 $ hg clone http://hg.secdev.org/scapy
 ```
 
 
-1. Scapy'yi standart yoldan kurun:
+3.Scapy'yi standart yoldan kurun:
 
-2. ```
+1. ```
 $ cd scapy
 $ sudo python setup.py install
 ```
