@@ -99,9 +99,9 @@ Aldığı parametreler:
 
 **prn** = _&lt;Her pakete uygulanacak fonksiyon.Genelde [_lambda fonksiyonlar_](http://belgeler.istihza.com/py3/ileri_fonksiyonlar.html#lambda-fonksiyonlari) kullanılır.&gt; _Ör: **prn = lambda x : x.summary\(\)**
 
-**lfilter** = _&lt;Her pakete uygulanıp başka işlemlerin yapıp yapılmayacağını belirler.Yine lambda fonksiyonu olarak kullanılır.&gt; _Ör: **lfilter = lambda x : x.haslayer\(Padding\)**
+**lfilter** = _&lt;Her pakete uygulanıp başka işlemlerin yapıp yapılmayacağını belirler.Yine lambda fonksiyonu olarak kullanılır.&gt;_ Ör: **lfilter = lambda x : x.haslayer\(Padding\)**
 
-**offline** = _&lt;Koklamak yerine, pcap dosyasından paketleri okumaya yarar&gt; _Ör: **offline="izle.pcap"**
+**offline** = _&lt;Koklamak yerine, pcap dosyasından paketleri okumaya yarar&gt;_ Ör: **offline="izle.pcap"**
 
 **timeout** = _&lt;Verilen süre kadar koklanır.Süre dolduğunda durur.Varsayılan değeri **None**'dur&gt;_
 
@@ -109,7 +109,7 @@ Aldığı parametreler:
 
 **opened\_socket** = _&lt;Soket nesnesi sağlar&gt;_
 
-**stop\_filter** = _&lt;Her pakete uygulanıp o paketten sonra koklamanın durup durmayacağını belirler&gt; _Ör: **stop\_filter= lambda x : x.haslayer\(TCP\)**
+**stop\_filter** = _&lt;Her pakete uygulanıp o paketten sonra koklamanın durup durmayacağını belirler&gt;_ Ör: **stop\_filter= lambda x : x.haslayer\(TCP\)**
 
 **exceptions** = _&lt;Kullanıcı tarafından kesmelerde, KeyboardInterrupt\(Ctrl+C\) gibi [_istisna_](http://www.istihza.com/resmi/py3/kilavuz/errors.html#istisnalar)ları yakalar&gt;_
 
