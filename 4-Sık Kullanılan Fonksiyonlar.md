@@ -2,7 +2,7 @@
 
 Tüm komut listesi için etkileşimli satıra **lsc\(\)** -_list commands_- yazabilirsiniz.
 
-İlgili komutların Scapy'deki yardım dosyaları için **help **fonksiyonuna parametre olarak verebilirsiniz. Ör. **help\(send\)**
+İlgili komutların Scapy'deki yardım dosyaları için **help** fonksiyonuna parametre olarak verebilirsiniz. Ör. **help\(send\)**
 
 ##
 
@@ -29,13 +29,13 @@ Temel olarak paket yollamaya yarar.3. katmanda\(_ağ katmanı_\) çalışır.Ger
 
 Artık söz dizimine aşina olduğunuzdan dolayı karmaşık yazmakta sakınca görmüyorum.İlk satırda **/** operatörünü kullanarak IP sınıfının **dst** parametresi ile örneklediğimiz nesneyi,TCP sınıfının **dport**\(_destination port_\) ve **flags** parametresi ile örneklediğimiz nesne ile birleştirdik.
 
-İkinci satırdaki **send **fonksiyonunda loop değerine verilen -10 değeri, döngünün toplam 10 kere dönmesini, inter değeri her 0.25 saniyede bir paket yollanmasını,iface değeri de wlan0 arayüzünü kullanacağımızı belirtir.
+İkinci satırdaki **send** fonksiyonunda loop değerine verilen -10 değeri, döngünün toplam 10 kere dönmesini, inter değeri her 0.25 saniyede bir paket yollanmasını,iface değeri de wlan0 arayüzünü kullanacağımızı belirtir.
 
 ### sr fonksiyonu
 
-**sr **fonksiyonu 3. katmanda\(_ağ katmanı_\) çalışır.Bu fonksiyonun ilk parametresi göndereceğiniz paket olmalıdır.Diğer isteğe bağlı parametreleri ise aşağıda gösterilmiştir.
+**sr** fonksiyonu 3. katmanda\(_ağ katmanı_\) çalışır.Bu fonksiyonun ilk parametresi göndereceğiniz paket olmalıdır.Diğer isteğe bağlı parametreleri ise aşağıda gösterilmiştir.
 
-**filter** = _&lt;_[_Berkeley Packet Filter_](https://en.wikipedia.org/wiki/Berkeley_Packet_Filter)_ ile filtreler&gt;_
+**filter** = _&lt;_[_Berkeley Packet Filter_](https://en.wikipedia.org/wiki/Berkeley_Packet_Filter) ile filtreler&gt;
 
 **retry** = _&lt;Yanıtlanmamış paketler için tekrar deneme sayısı&gt;_
 
@@ -52,13 +52,11 @@ Artık söz dizimine aşina olduğunuzdan dolayı karmaşık yazmakta sakınca g
 
 İlk satır üstte **send** fonksiyonunda verilenin aynısı zaten.
 
-Sonra **sr\(\) **fonksiyonuna verdiğimiz parametreler ile 3 kere paket göndereceğini\(_eğer cevap gelmezse,birine cevap gelirse paket göndermeyi kesecektir_\), zaman aşımının 1.5 saniye olacağını, ağ arayüzü olarak wlan0 kullanılacağını ve sadece hedefin ip adresinin 192.168.2.1 ve hedef portun 3350 olduğunu söyledik.Cümle biraz karmaşık oldu ama gereksiz açıkladığımı düşünüyorum.Zaten satırlarda her şey belli oluyor :\)
+Sonra **sr\(\)** fonksiyonuna verdiğimiz parametreler ile 3 kere paket göndereceğini\(_eğer cevap gelmezse,birine cevap gelirse paket göndermeyi kesecektir_\), zaman aşımının 1.5 saniye olacağını, ağ arayüzü olarak wlan0 kullanılacağını ve sadece hedefin ip adresinin 192.168.2.1 ve hedef portun 3350 olduğunu söyledik.Cümle biraz karmaşık oldu ama gereksiz açıkladığımı düşünüyorum.Zaten satırlarda her şey belli oluyor :\)
 
 ### sr1 fonksiyonu
 
-1. katmandan\(_ağ katmanı_\) paket yollar ve ilk cevabı döndürür.**sr fonksiyonu**yla aynı parametreleri alır kullanımı aynıdır.Tek farkı
-
-**sr1**'in aldığı ilk cevabı döndürmesidir.
+3.katmandan\(_ağ katmanı_\) paket yollar ve ilk cevabı döndürür.**sr fonksiyonu**yla aynı parametreleri alır kullanımı aynıdır.Tek farkı **sr1**'in aldığı ilk cevabı döndürmesidir.
 
 **Not**: Aslında **sr1** in çok daha farklı yönleri var.Ama sanırım bu biraz uzmanlık istiyor.Şu durumda ben Scapy'yi yeni yeni öğrendiğim için bu konuda net bir şey söyleyemem sadece şöyle bir örnekle açıklayayım.
 
@@ -81,9 +79,9 @@ Received 1 packets, got 1 answers, remaining 0 packets
 
 ### sendp, srp ve srp1 fonksiyonları
 
-Bu fonksiyonların kullanımı yukarıdaki **send, sr **ve **sr1 **fonksiyonlardan önemli bir noktada ayrılır.Üstte belirttiğimiz gibi **send,sr **ve **sr1** fonksiyonu 3. katmanda çalışır.**sendp,srp **ve **srp1** ise 2. katmanda çalışır.
+Bu fonksiyonların kullanımı yukarıdaki **send, sr **ve **sr1** fonksiyonlardan önemli bir noktada ayrılır.Üstte belirttiğimiz gibi **send,sr** ve **sr1** fonksiyonu 3. katmanda çalışır.**sendp,srp** ve **srp1** ise 2. katmanda çalışır.
 
-Yani sonunda **p **olan fonksiyonlar, 3. katman yerine 2. katmanda çalışacağını belirtir.
+Yani sonunda **p** olan fonksiyonlar, 3. katman yerine 2. katmanda çalışacağını belirtir.
 
 ##
 
@@ -99,11 +97,11 @@ Aldığı parametreler:
 
 **filter** = _&lt;Berkeley Packet Filter ile filtreler&gt;_
 
-**prn** = _&lt;Her pakete uygulanacak fonksiyon.Genelde _[_lambda fonksiyonlar_](http://belgeler.istihza.com/py3/ileri_fonksiyonlar.html#lambda-fonksiyonlari)_ kullanılır.&gt; _Ör: **prn = lambda x : x.summary\(\)**
+**prn** = _&lt;Her pakete uygulanacak fonksiyon.Genelde [_lambda fonksiyonlar_](http://belgeler.istihza.com/py3/ileri_fonksiyonlar.html#lambda-fonksiyonlari) kullanılır.&gt; _Ör: **prn = lambda x : x.summary\(\)**
 
 **lfilter** = _&lt;Her pakete uygulanıp başka işlemlerin yapıp yapılmayacağını belirler.Yine lambda fonksiyonu olarak kullanılır.&gt; _Ör: **lfilter = lambda x : x.haslayer\(Padding\)**
 
-**offline **= _&lt;Koklamak yerine, pcap dosyasından paketleri okumaya yarar&gt; _Ör: **offline="izle.pcap"**
+**offline** = _&lt;Koklamak yerine, pcap dosyasından paketleri okumaya yarar&gt; _Ör: **offline="izle.pcap"**
 
 **timeout** = _&lt;Verilen süre kadar koklanır.Süre dolduğunda durur.Varsayılan değeri **None**'dur&gt;_
 
@@ -113,7 +111,7 @@ Aldığı parametreler:
 
 **stop\_filter** = _&lt;Her pakete uygulanıp o paketten sonra koklamanın durup durmayacağını belirler&gt; _Ör: **stop\_filter= lambda x : x.haslayer\(TCP\)**
 
-**exceptions** = _&lt;Kullanıcı tarafından kesmelerde, KeyboardInterrupt\(Ctrl+C\) gibi _[_istisna_](http://www.istihza.com/resmi/py3/kilavuz/errors.html#istisnalar)_ları yakalar&gt;_
+**exceptions** = _&lt;Kullanıcı tarafından kesmelerde, KeyboardInterrupt\(Ctrl+C\) gibi [_istisna_](http://www.istihza.com/resmi/py3/kilavuz/errors.html#istisnalar)ları yakalar&gt;_
 
 ```
 >>> var = sniff(count=3,filter="udp and host 192.168.2.1",prn=lambda x:x.summary(),timeout=30)
@@ -171,7 +169,7 @@ Pcap dosyası yazmaya yarar -_write pcap_-. Dosyanın bulunmasına gerek yoktur.
 
 Pcap dosyasını okumaya yarar.
 
-İlk olarak pcap dosyasını alır.İkinci parametre olarak da **count **parametresi ile kaç adet paket alınacağını alır.
+İlk olarak pcap dosyasını alır.İkinci parametre olarak da **count** parametresi ile kaç adet paket alınacağını alır.
 
 ```
 >>> rdpcap("test.pcap",count=1)
