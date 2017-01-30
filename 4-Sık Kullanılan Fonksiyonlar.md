@@ -79,7 +79,7 @@ Received 1 packets, got 1 answers, remaining 0 packets
 
 ### sendp, srp ve srp1 fonksiyonları
 
-Bu fonksiyonların kullanımı yukarıdaki **send, sr **ve **sr1** fonksiyonlardan önemli bir noktada ayrılır.Üstte belirttiğimiz gibi **send,sr** ve **sr1** fonksiyonu 3. katmanda çalışır.**sendp,srp** ve **srp1** ise 2. katmanda çalışır.
+Bu fonksiyonların kullanımı yukarıdaki **send, sr** ve **sr1** fonksiyonlardan önemli bir noktada ayrılır.Üstte belirttiğimiz gibi **send,sr** ve **sr1** fonksiyonu 3. katmanda çalışır.**sendp,srp** ve **srp1** ise 2. katmanda çalışır.
 
 Yani sonunda **p** olan fonksiyonlar, 3. katman yerine 2. katmanda çalışacağını belirtir.
 
@@ -97,7 +97,7 @@ Aldığı parametreler:
 
 **filter** = _&lt;Berkeley Packet Filter ile filtreler&gt;_
 
-**prn** = _&lt;Her pakete uygulanacak fonksiyon.Genelde [_lambda fonksiyonlar_](http://belgeler.istihza.com/py3/ileri_fonksiyonlar.html#lambda-fonksiyonlari) kullanılır.&gt; _Ör: **prn = lambda x : x.summary\(\)**
+**prn** = _&lt;Her pakete uygulanacak fonksiyon.Genelde [_lambda fonksiyonlar_](http://belgeler.istihza.com/py3/ileri_fonksiyonlar.html#lambda-fonksiyonlari) kullanılır.&gt;_ Ör: **prn = lambda x : x.summary\(\)**
 
 **lfilter** = _&lt;Her pakete uygulanıp başka işlemlerin yapıp yapılmayacağını belirler.Yine lambda fonksiyonu olarak kullanılır.&gt;_ Ör: **lfilter = lambda x : x.haslayer\(Padding\)**
 
